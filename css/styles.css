@@ -151,6 +151,10 @@ background: var(--color-white);
     
 }
 
+.third-section {
+    background-color:var(--color-button-cloud);
+}
+
 .nav-third-section {
     font-size: 36px;
     line-height: 1.11;
@@ -160,20 +164,9 @@ background: var(--color-white);
     color: var(--color-navy-blue);
 }
 
-.fourth-section {
-    background-color:var(--color-button-cloud);
-}
 
-.nav-fourth-section {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--color-navy-blue);
-}
 
-.li-fourth {
+.li-third {
     background-color:var(--color-white);
 
 }
@@ -211,21 +204,6 @@ color:var(--color-text);
 }
 
 
-.button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color:var(--color-iris);
-    background-color: var(--color-button-cloud);
-    cursor: pointer;
-}
-
-.button:hover, .button:focus {
-    color:var(--color-white);
-    background-color:var(--color-ocean);
-}
 
 .list-main {
     list-style: none;
@@ -237,13 +215,7 @@ color:var(--color-text);
     text-decoration:none;
 }
 
-.link-style {
-    font-family:"Roboto", sans-serif;
-    font-size:16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-slate);
-}
+
 
 
 
