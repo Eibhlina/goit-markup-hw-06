@@ -255,9 +255,9 @@ background: var(--color-white);
 /* Portfolio  */
 
 .portfolio {
-    padding-top: 96px; 
+    padding-top: 120px; 
     padding-bottom: 120px; 
-    margin-bottom: 72px;
+    
 }
 
 .list-main {
