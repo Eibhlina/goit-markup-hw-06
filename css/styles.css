@@ -105,6 +105,7 @@ ul {
 
 
 .my-links  .link {
+    display: flex;
     font-family:"Roboto", sans-serif;
     font-size: 16px;
     font-style:normal;
@@ -113,9 +114,8 @@ ul {
     letter-spacing:0.02em;
     text-decoration:none;
     list-style:none;
-    display:flex;
+    padding: 24px 0;
     gap: 40px;
-    padding: 24px 0 24px;
 }
 
 
@@ -123,6 +123,7 @@ ul {
 .my-links, .link:focus {
    color: var(--color-ocean); 
    text-decoration:none;
+   gap: 40px;
 }
 
 .information {
