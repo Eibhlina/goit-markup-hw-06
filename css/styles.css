@@ -75,17 +75,6 @@ ul {
     }
 
 
-.html {
-    color:var(--color-navy-blue);
-}
-
-.info {
-    font-style:normal;
-    gap: 40px;
-
-}
-
-
 
 .my-links  .link {
     display: flex;
@@ -107,6 +96,19 @@ ul {
    color: var(--color-ocean); 
    text-decoration:none;
    gap: 40px;
+}
+
+
+
+.html {
+    color:var(--color-navy-blue);
+}
+
+
+.info {
+    font-style:normal;
+    gap: 40px;
+
 }
 
 
