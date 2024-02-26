@@ -86,23 +86,6 @@ ul {
 }
 
 
-.address {
-    color:var(--color-slate);
-    text-decoration:none;
-    font-style:normal;
-    line-height:1.5;
-    letter-spacing:0.02em;
-    display:flex;
-    gap: 40px;
-}
-
-
-.address:hover .info:hover {
-    color:var(--color-ocean);
-    text-decoration:none;
-}
-
-
 
 .my-links  .link {
     display: flex;
@@ -124,6 +107,23 @@ ul {
    color: var(--color-ocean); 
    text-decoration:none;
    gap: 40px;
+}
+
+
+.address {
+    color:var(--color-slate);
+    text-decoration:none;
+    font-style:normal;
+    line-height:1.5;
+    letter-spacing:0.02em;
+    display:flex;
+    gap: 40px;
+}
+
+
+.address:hover .info:hover {
+    color:var(--color-ocean);
+    text-decoration:none;
 }
 
 .information {
