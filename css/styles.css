@@ -127,6 +127,7 @@ ul {
 }
 
 .information {
+    display: flex;
     gap: 40px;
 }
 
