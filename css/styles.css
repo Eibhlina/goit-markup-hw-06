@@ -92,6 +92,7 @@ ul {
     font-style:normal;
     line-height:1.5;
     letter-spacing:0.02em;
+    display:flex;
     gap: 40px;
 }
 
@@ -112,7 +113,9 @@ ul {
     letter-spacing:0.02em;
     text-decoration:none;
     list-style:none;
-    
+    display:flex;
+    gap: 40px;
+    padding: 24px 0 24px;
 }
 
 
