@@ -376,10 +376,10 @@ background: var(--color-white);
 }
 
 
-.link-decoration:hover .stylish-and-user,  
+/* .link-decoration:hover .stylish-and-user,  
 .link-decoration:focus .stylish-and-user { 
     transform: translateY(0%); 
-} 
+}  */
 
 
 .foto {
