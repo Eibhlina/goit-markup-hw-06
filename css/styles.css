@@ -106,6 +106,9 @@ ul {
 .html {
     color:var(--color-navy-blue);
     position: relative;
+    padding: 24px 0;
+    display: inline-block;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -351,6 +354,8 @@ background: var(--color-white);
     gap: 10px;
     column-gap: 24px; 
     row-gap: 48px; 
+    width: 1128px;
+    height: 1000 px;
 }
 
 
@@ -365,6 +370,7 @@ background: var(--color-white);
 
 .link-decoration:hover, .link-decoration:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -395,6 +401,7 @@ background: var(--color-white);
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
    
 }
+
 
 
 .application {
