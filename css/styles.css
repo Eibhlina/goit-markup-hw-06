@@ -833,3 +833,10 @@ button {
     background-color: var(--color-ocean);
     fill: #ffffff;
 }
+
+
+.checkbox:checked {
+    background-color: var(--color-ocean);
+    border: none;
+    fill: #f4f4fd;  
+}
