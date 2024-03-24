@@ -509,13 +509,18 @@ max-width: 300px;
 
 /* Formularz */
 
+.submit {
+    margin-left: 80px;
+}
+
+
 .footer-form {
     display: flex;
     gap: 24px;
 
 }
 
-.footer-label {
+.email {
     width: 264px;
     height: 40px;
     border: 1px solid var(--WHITE);
@@ -527,14 +532,14 @@ max-width: 300px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
     color: var(--WHITE);
+    display:flex;
+
 }
 
+.email ::placeholder {
+    color: var(--color-white);
+}
 
-
-    .email {
-        color: var(--WHITE);
-    
-    }
     
     .button-submit {
         display: flex;
