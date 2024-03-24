@@ -563,13 +563,8 @@ max-width: 300px;
     }
     
     .button-send {
-        padding: 10px;
         margin-left: 16px; 
-        background-color: var(--WHITE);
-        color: var(--WHITE);
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
+   
     }
 
 
