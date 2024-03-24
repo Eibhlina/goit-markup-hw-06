@@ -531,8 +531,8 @@ max-width: 300px;
     padding-left: 16px; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
-    color: var(--WHITE);
     display:flex;
+    color: #ffffff; 
 
 }
 
@@ -558,7 +558,7 @@ max-width: 300px;
         border-radius: 4px;
         border: none;
         background-color: var(--IRIS, #4D5AE5);
-        color: var(--WHITE);
+        color: #ffffff; 
         cursor: pointer;
     }
     
