@@ -523,7 +523,7 @@ max-width: 300px;
 .email {
     width: 264px;
     height: 40px;
-    border: 1px solid var(--WHITE);
+    border: 1px solid #ffffff; 
     background-color: transparent;
     font-size: 12px; 
     line-height: 2;
@@ -537,7 +537,7 @@ max-width: 300px;
 }
 
 .email ::placeholder {
-    color: var(--color-white);
+    color: #ffffff; 
 }
 
     
