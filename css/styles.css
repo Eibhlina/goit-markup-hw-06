@@ -357,7 +357,7 @@ background: var(--color-white);
     column-gap: 24px; 
     row-gap: 48px; 
     width: 1128px;
-    height: 1000 px;
+    
 }
 
 
@@ -688,7 +688,6 @@ button {
 
 .input-container {
     margin-bottom: 8px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -796,8 +795,13 @@ button {
 
 }
 
+.checkbox:checked + .checkbox-label > .span-label {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+  }
+
 .icon-check {
-    background-color: var(--color-ocean);
     border: none; 
 }
 
