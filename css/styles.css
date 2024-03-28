@@ -740,6 +740,10 @@ button {
    fill: var(--color-iris);
 }
 
+.input:focus + svg {
+    fill: #4D5AE5;
+    }
+
 
 .input-comment {
     margin-bottom: 16px;
