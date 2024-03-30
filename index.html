@@ -43,7 +43,188 @@
             <li><a class="address link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
+
+
+<!-- MOBILNE MENU -->
+
+    <button class="mobile-menu-button" type="button">
+        <svg class="mob-menu-button" width="24" height="24">
+          <use href="./images/modal.svg#icon-mobile-menu" />
+        </svg>
+      </button>
+
+
        </div>
+
+
+
+       <div class="mobile-menu is-open-mobile-menu">
+        <button class="x-button" type="button">
+          <svg class="close" width="8" height="8">
+            <use href="./images/modal.svg#icon-close" />
+          </svg>
+        </button>
+        <div class="mobile-nav">
+          <nav class="navigation-mobile">
+            <ul class="menu-mobile">
+              <li>
+                <a class="mobile-studio" href="./index.html">Studio</a>
+              </li>
+              <li><a class="mobile-studio" href="">Portfolio</a></li>
+              <li><a class="mobile-studio" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-adres">
+          <address class="m-adres">
+            <ul class="contacts-mobile">
+              <li>
+                <a class="mobile-link-adres" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-link-adres" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="mobile-social">
+          <ul class="social-media">
+            <li class="employe-social-media">
+              <a class="media" href="./index.html">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employe-social-media">
+              <a class="media" href="./index.html">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employe-social-media">
+              <a class="media" href="./index.html">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employe-social-media">
+              <a class="media" href="./index.html">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="backdrop is-open">
+        <div class="open">
+          <button class="x-button" type="button">
+            <svg class="close" width="8" height="8">
+              <use href="./images/modal.svg#icon-close" />
+            </svg>
+          </button>
+          <p class="you-contacts">
+            Leave your contacts and we will call you back
+          </p>
+
+
+          <form name="you-contact" autocomplete="off" novalidate>
+
+            <div class="mobile-icon">
+              <label for="user-name" class="label">Name </label>
+              <div class="input">
+                <input
+                  class="input-style"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                />
+
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="mobile-icon">
+
+              <label for="tel" class="label">Phone </label>
+              <div class="input">
+
+                <input 
+                  class="input-style" 
+                  type="tel" 
+                  id="tel"
+                  name="phone"  
+                  />
+
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="mobile-icon">
+              <label for="email" class="label">Email</label>
+
+              <div class="input">
+
+                <input 
+                   class="input-style"
+                   type="email" 
+                   id="email"
+                   name="email"   
+                   />
+
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="comment-area">
+              <label for="user-comment" class="label">Comment </label>
+              
+              <textarea
+                class="comment-section"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+                
+              ></textarea>
+            </div>
+
+            <div class="checkbox-mobile">
+
+              <input
+                class="modal-check visually-hidden"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                value="true"
+              />
+
+              <label for="user-privacy" class="check-text">
+                <span class="check">
+                  <svg width="10" height="8" class="icon-check">
+                    <use href="./images/modal.svg#icon-vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="privacy-policy">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="send-button">Send</button>
+          </form>
+        </div>
+      </div>
+
 
     </header>
 
@@ -120,7 +301,15 @@ for Your Business
 <ul class="list-third-section list">
 
     <!-- MARK -->
-    <li class="li-third"><img src="./images/Mark.jpg" 
+    <li class="li-third">
+        <img 
+
+        srcset="
+        ./images/Mark-1.jpg 1x,
+        ./images/Mark-2.jpg 2x
+        "
+
+        src="./images/Mark.jpg" 
         alt="Mark" 
          width="264" 
         height="260" 
@@ -170,7 +359,15 @@ for Your Business
 
 
     <!-- TOM -->
-    <li class="li-third"><img src="./images/Tom.jpg" 
+    <li class="li-third">
+        <img 
+
+        srcset="
+        ./images/Tom-1.jpg    1x,
+        ./images/Tom-2.jpg    2x
+        "
+
+        src="./images/Tom.jpg" 
         alt="Tom" 
         width="264" 
         height="260" 
@@ -221,7 +418,15 @@ for Your Business
 
 
     <!-- CAMILA -->
-    <li class="li-third"><img src="./images/Camila.jpg" 
+    <li class="li-third">
+        <img 
+        
+        srcset="
+        ./images/Camila-1.jpg    1x,
+        ./images/Camila-2.jpg    2x
+        "
+
+        src="./images/Camila.jpg" 
         alt="Camila" 
          width="264" 
         height="260" 
@@ -270,7 +475,15 @@ for Your Business
 
 
     <!-- DANIEL -->
-    <li class="li-third"><img src="./images/Daniel.jpg" 
+    <li class="li-third">
+        <img 
+        
+        srcset="
+        ./images/Daniel-1.jpg    1x,
+        ./images/Daniel-2.jpg 2x
+        "
+
+        src="./images/Daniel.jpg" 
         alt="Daniel" 
          width="264" 
         height="260"  
@@ -340,12 +553,37 @@ for Your Business
             
 
             <div class="foto">
-            <img
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/1banking-mobile1.jpg    1x,
+                        ./images/1banking-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/1banking-tablet1.jpg    1x,
+                        ./images/1banking-tablet2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/1banking-desktop1.jpg    1x,
+                        ./images/1banking-desktop2.jpg    2x
+                    "
+                />
+                
+                <img
             src="./images/1BankingApp.jpg"
             alt="Banking App"
-            width="360"
-            height="300"
             />
+                </picture>
+            
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
@@ -362,12 +600,37 @@ for Your Business
             
             
             <div class="foto">
-            <img
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/2cashless-mobile1.jpg    1x,
+                        ./images/2cashless-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/2cashless-tablet1.jpg    1x,
+                        ./images/2cashless-tablet2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/2cashless-desktop1.jpg    1x,
+                        ./images/2cashless-desktop2.jpg    2x
+                    "
+                />
+                
+           <img
             src="./images/2CashlessPayment.jpg"
             alt="Cashless Payment"
-            width="360"
-            height="300"
             />
+                </picture>
+
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
@@ -382,14 +645,40 @@ for Your Business
 
         <li class="list-photo">
            
-            
+
             <div class="foto">  
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/3meditation-mobile1.jpg    1x,
+                        ./images/3meditation-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/3meditation-tablet1.jpg    1x,
+                        ./images/3meditation-tablet2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/3meditation-desktop1.jpg    1x,
+                        ./images/3meditation-desktop2.jpg    2x
+                    "
+                />
+                
             <img 
             src="./images/3MeditationApp.jpg"
             alt="Meditation App"
-            width="360"
-            height="300"
             />
+                </picture>
+
+            
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
@@ -405,12 +694,38 @@ for Your Business
         <li class="list-photo">
             
             <div class="foto">  
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/4taxi-mobile1.jpg    1x,
+                        ./images/4taxi-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/4taxi-tablet1.jpg    1x,
+                        ./images/4taxi-tablet2.jpg 2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/4taxi-desktop1.jpg    1x,
+                        ./images/4taxi-desktop2.jpg    2x
+                    "
+                />
+                
             <img 
             src="./images/4TaxiService.jpg"
             alt="Taxi Service"
-            width="360"
-            height="300"
             />
+                </picture>
+
+            
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
@@ -427,12 +742,37 @@ for Your Business
            
 
             <div class="foto">  
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/5screen-mobile1.jpg    1x,
+                        ./images/5screen-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/5screen-tablet1.jpg    1x,
+                        ./images/5screen-tablet2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/5screen-desktop1.jpg    1x,
+                        ./images/5screen-desktop2.jpg    2x
+                    "
+                />
+                
             <img 
             src="./images/5ScreenIllustrations.jpg"
             alt="Screen Illustrations"
-            width="360"
-            height="300"
             />
+                </picture>
+           
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
@@ -449,12 +789,38 @@ for Your Business
             
 
             <div class="foto">  
-            <img 
+
+                <picture class="portfolio-photo">
+                    
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                        ./images/6course-mobile1.jpg    1x,
+                        ./images/6course-mobile2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="
+                        ./images/6course-tablet1.jpg    1x,
+                        ./images/6course-tablet2.jpg    2x
+                    "
+                />
+                <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                        ./images/6course-desktop1.jpg    1x,
+                        ./images/6course-desktop2.jpg    2x
+                    "
+                />
+                
+              <img 
             src="./images/6OnlineCourse.jpg"
             alt="Online Courses"
-            width="360"
-            height="300"
             />
+                </picture>
+
+          
             <p class="stylish-and-user">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
             </p>
             </div>
