@@ -861,8 +861,36 @@ button {
       background-color: transparent;
     }
     
+
+   .x-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+   
+  .x-button:hover,
+  .x-button:focus {
+    background-color: var(--color-ocean);
+    border: none;
+    fill: #ffffff;
+  }
+
+
+
    .mobile-menu {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       transform: translateX(100%);
@@ -871,6 +899,8 @@ button {
       background: var(--color-white);
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       padding: 72px 24px 24px 24px;
+      display: flex;
+      flex-direction: column;
     }
 
     .is-open-mobile-menu {
@@ -967,6 +997,8 @@ button {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/people-mobile1.jpg);
+        url(../images/people-mobile2.jpg);
+
       max-width: 1440px;
       background-repeat: no-repeat;
       background-position: center;
