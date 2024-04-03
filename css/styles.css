@@ -88,6 +88,20 @@
         align-items: center;
     }
     
+    
+    .link {
+        color: var(--color-navy-blue);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        font-style: normal;
+        padding: 24px 0;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     .logo {
         font-family: "Raleway", sans-serif;
         color: var(--color-iris);
@@ -108,18 +122,7 @@
         color: var(--color-navy-blue);
     }
     
-    .link {
-        color: var(--color-navy-blue);
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        font-style: normal;
-        padding: 24px 0;
-        position: relative;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
     
     .link:hover,
     .link:focus {
@@ -138,6 +141,37 @@
         display: none;
     }
     
+    .html {
+        color:var(--color-navy-blue);
+        position: relative;
+        padding: 24px 0;
+       
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .link-active {
+        color: var(--color-ocean);
+        font-weight: 500; 
+        text-decoration: none;
+    }
+    
+    
+      .link-active::after {
+        content: '';
+        color: var(--color-ocean);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color:var(--color-ocean);
+        border-radius: 2px;
+        width:100%;   
+        
+    }
+
+
+
     .address-link {
         color: var(--color-slate);
         font-style: normal;
@@ -156,7 +190,9 @@
     .address-link:active {
         color: var(--color-ocean);
     }
-    
+
+
+
    /* MENU */
     
     .icon-mm {
@@ -476,14 +512,14 @@
     }
     
     
-    .list.titles {
+    .header-list {
         color: var(--color-navy-blue);
         line-height: 1.2;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
     }
     
-    .list-titles .mobile {
+    .header-list .mobile {
         font-size: 36px;
         font-weight: 700;
         text-align: center;
@@ -781,7 +817,6 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px;
-        /* font-size: 18px; */
         line-height: 1.17;
         letter-spacing: 0.04em;
         outline: transparent;
@@ -804,9 +839,11 @@
     .checkbox-container {
         display: flex;
         margin-bottom: 24px;
+        
     }
     
     .checkbox {
+        
         border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         width: 16px;
@@ -875,35 +912,41 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
+
+
     .privacy {
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: inline-flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
     }
-    
-    .check {
+
+   .modal-check {
         cursor: pointer;
-    }
-    
-    .check:checked + .modal-label span {
+       }
+
+    .modal-check:checked + .user-privacy span {
         background-color: var(--color-ocean);
         border: none;
         fill: var(--color-text);
     }
-    
-    .privacy-link {
+
+   
+    .privacy-link { 
         color: var(--color-iris);
     }
     
-
+    .checkbox-label {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
 
     @media (min-resolution: 192dpi) {
         .first-section {
@@ -1110,28 +1153,54 @@
             padding-right: 15px;
         }
       
+     
 
-        
         .logo {
             padding: 0;
             margin-right: 76px;
+           
         }
-    
+
+
         .one-navi-list,
         .two-navi-list {
             flex-direction: row;
         }
+
         .two-navi-list {
             gap: 40px;
             padding: 24px 0;
             margin-right: 0;
             justify-content: flex-end;
         }
+
         .address-link {
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
         }
+
+       
+       .link-activ {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+
+        .link-active:hover,
+        .link-active:focus {
+            color: var(--color-ocean);
+            
+        }
+
+      
+       
        
 /* 1 */
 
