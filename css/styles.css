@@ -171,7 +171,6 @@
     }
 
 
-
     .address-link {
         color: var(--color-slate);
         font-style: normal;
@@ -361,9 +360,24 @@
     .icon{
         display: none;
     }
-    
+
+    .header-list {
+        color: var(--color-navy-blue);
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;  
+    }
+
+
+       .mt-h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+}
+
     .header-style {
         font-weight: 500;
+        text-decoration: none;
     }
 
     .visually-hidden {
@@ -451,8 +465,6 @@
     }
 
 
-  
-    
     /* Portfolio - czwarta sekcja */
 
       .portfolio {
@@ -510,23 +522,8 @@
     .list-photo :focus .stylish-and-user {
         transform: translateY(0%);
     }
-    
-    
-    .header-list {
-        color: var(--color-navy-blue);
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
-    }
-    
-    .header-list .mobile {
-        font-size: 36px;
-        font-weight: 700;
-        text-align: center;
-    }
-    
-    
-    
+
+   
    /* Stopka */
 
 
@@ -663,14 +660,12 @@
         margin: 0 auto;
     }
     
-    .button-send {
+    .button-subscribe {
         fill: white;
         margin-left: 16px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    
-
 
 /* IKONY */
 
@@ -695,7 +690,6 @@
     }
     
     
-
     /* Okno modalne */
     
     .backdrop {
@@ -1041,7 +1035,8 @@
             width: calc((100% - 24px) / 2);
             gap: 72px;
         }
-        .header-list .mobile {
+        
+        .mt-h3 {
             font-size: 36px;
             font-weight: 700;
             text-align: left;
@@ -1115,6 +1110,8 @@
         }
         .email{
             opacity: 0.3;
+            
+
         }
         .email::placeholder {
             font-weight: 400;
@@ -1160,7 +1157,6 @@
             margin-right: 76px;
            
         }
-
 
         .one-navi-list,
         .two-navi-list {
@@ -1215,8 +1211,8 @@
         }
 
 
-       /* 2
-        */
+       /* 2*/
+       
         .second-section {
             padding: 120px 0;
         }
@@ -1251,17 +1247,19 @@
         }
 
 
+        .desktop-h2 {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: left; 
+        }
+
+
         /* 3 */
 
         .third-section {
             padding: 120px 0;
         }
 
-       
-        .header-list .mobile {
-            font-size: 20px;
-            font-weight: 500;
-        }
 
        /* 4 */
 
